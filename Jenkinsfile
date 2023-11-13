@@ -12,7 +12,7 @@ pipeline {
             }
             when {
                 beforeAgent true
-                branch 'master1'
+                branch 'master'
             }
             steps {
                 sh ''' echo 'Deploying'
