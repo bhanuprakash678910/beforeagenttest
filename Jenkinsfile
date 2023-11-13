@@ -8,14 +8,15 @@ pipeline {
         }
         stage('Example Deploy') {
             agent {
-                label "some-label"
+                label "slave1-ub"
             }
             when {
                 beforeAgent true
                 branch 'master'
             }
             steps {
-                echo 'Deploying'
+                sh ''' echo 'Deploying'
+                apt-get update && apt-get install git -y '''
             }
         }
     }
