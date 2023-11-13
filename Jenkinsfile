@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Example Deploy') {
             agent {
-                label "slave1-ub2"
+                label "slave1-ub"
             }
             when {
                 //beforeAgent true
