@@ -11,8 +11,7 @@ pipeline {
                 label "some-label"
             }
             when {
-                beforeAgent true
-                branch 'production'
+                branch 'dev'
             }
             steps {
                 echo 'Deploying'
