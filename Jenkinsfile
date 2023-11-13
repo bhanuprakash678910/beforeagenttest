@@ -8,13 +8,13 @@ pipeline {
         }
         stage('Example Deploy') {
             agent {
-                label "some-label"
+                label "slave-redhat"
             }
             when {
                 branch 'dev'
             }
             steps {
-                echo 'Deploying'
+                echo 'Deploying Redhat server'
             }
         }
     }
