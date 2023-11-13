@@ -11,7 +11,7 @@ pipeline {
                 label "slave1-ub"
             }
             when {
-                //beforeAgent true
+                beforeAgent true
                 branch 'master1'
             }
             steps {
