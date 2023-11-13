@@ -8,10 +8,10 @@ pipeline {
         }
         stage('Example Deploy') {
             agent {
-                label "slave1-ub"
+                label "slave1-ub2"
             }
             when {
-                beforeAgent true
+                //beforeAgent true
                 branch 'master'
             }
             steps {
